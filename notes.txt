@@ -1,0 +1,6 @@
+00 - Before You Code
+    10/10. Easy enough.
+01 - Hello World
+    10/10. I used Jetbrains IntelliJ Idea Ultimate but it was the same anyway.
+02 - Data Types
+    ... to be completed after
