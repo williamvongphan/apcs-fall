@@ -3,4 +3,14 @@
 01 - Hello World
     10/10. I used Jetbrains IntelliJ Idea Ultimate but it was the same anyway.
 02 - Data Types
-    ... to be completed after
+    8/10. I don't really like such specific data types because I have always used Python and NodeJS which don't do that.
+03 - Void Methods
+    8/10. As stated before, I don't like void functions or extra writing (but this is for good).
+04 - Conditionals
+    11/10. Exactly the same as Javascript does.
+05 - Value Methods
+    8/10. Same reason as 03.
+06 - Loops
+    11/10. Exactly the same as Javascript does.
+07 - Arrays
+    10/10. Same as Javascript except for the declaration style. I fixed a typo in the assignment, actually.
