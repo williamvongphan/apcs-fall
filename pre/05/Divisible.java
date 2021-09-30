@@ -1,4 +1,4 @@
-class Main {
+class Divisible {
     public static boolean is_divisible(int dividend, int divisor) {
         if (dividend % divisor == 0) {return true;} else {return false;}
     }

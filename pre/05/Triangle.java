@@ -1,4 +1,4 @@
-class Main {
+class Triangle {
     public static boolean is_triangle (int A, int B, int C) {
         if (A + B > C && A + C > B && B + C > A) {
             return true;

@@ -1,2 +1,2 @@
 language = "java10"
-run = "echo use shell"
+run = "bash run.sh"

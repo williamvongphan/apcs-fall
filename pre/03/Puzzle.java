@@ -1,4 +1,4 @@
-class Main {
+class Puzzle {
     public static void zoop() {
         baffle();
         System.out.print("You wugga ");

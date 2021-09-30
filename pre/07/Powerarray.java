@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Main {
+class Powerarray {
     public static double[] power (double[] a) {
         for (int i = 0; i < a.length; i++) {
             a[i] = Math.pow(a[i], 2.0);

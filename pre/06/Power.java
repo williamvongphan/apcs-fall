@@ -1,4 +1,4 @@
-class Main {
+class Power {
     public static long power (long number, int power) {
         long answer = 1;
         for (int x = 0; x < power; x++) {

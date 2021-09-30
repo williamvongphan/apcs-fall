@@ -1,4 +1,4 @@
-class Main {
+class Time {
     static float percent_of_day (int current_second) {
         return (float) current_second * 100 / 86400;
     }

@@ -1,4 +1,4 @@
-class Main {
+class Date {
     public static void main(String[] args) {
         String month = "January";
         String day_name = "Monday";

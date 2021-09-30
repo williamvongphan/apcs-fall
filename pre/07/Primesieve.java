@@ -1,4 +1,4 @@
-public class Main {
+class Primesieve {
     public static int prime_sieve(int N) {
 
         boolean[] isPrime = new boolean[N + 1];

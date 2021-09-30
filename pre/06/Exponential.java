@@ -1,4 +1,4 @@
-class Main {
+class Exponential {
     public static double my_exp (float power, int accuracy) {
         double answer = 1;
         double last_iter = 1;

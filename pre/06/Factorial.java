@@ -1,4 +1,4 @@
-class Main {
+class Factorial {
     public static long factorial (long number) {
         long answer = 1;
         for (long x = number; x > 0; x--) {

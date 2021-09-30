@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Main {
+class Maxidx {
     public static int index_of_max (int[] a) {
         int idx = 0;
         int size = a.length;
