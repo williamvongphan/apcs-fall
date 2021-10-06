@@ -1,3 +1,10 @@
+/*
+Team Dynastic Duo of Destiny {Fang, Ducky Cat, William, and CS50DDB}
+APCS
+HW 12 - On Elder Individuality and the Elimination of Radio Fuzz
+2021-10-26
+*/
+
 public class Greet {
   public static void main( String[] args ) {
     String greeting;
@@ -24,3 +31,11 @@ public class Greet {
 
   } //end main()
 } //end Greet
+
+/* DISCOVERIES
+Attributes don't need to use `this.<attribute>`. It's not like javascript.
+*/
+
+/* QCC
+Nothing as of right now
+*/
