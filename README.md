@@ -24,12 +24,17 @@ Most days, we will create a new file that stores all our work in Java for the da
 ## Other files
 
 `.gitignore`: Basically ignores junk files that don't contribute anything.
+
 `README.md`: What you're reading right now
 
 ### Convenience Scripts
 
 `clean.sh`: Cleans all the .class files in all subdirectories.
+
 `compile.sh`: Compiles all .java files in given directory.
+
 `pull.sh`: Pulls all new files from github. 
+
 `pull.sh`: Commits and pushes new files. 
+
 `run.sh`: Compiles and runs a specific file in a specific directory.
