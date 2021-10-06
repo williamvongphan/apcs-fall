@@ -1,4 +1,5 @@
 # AP Computer Science A
-work
+My AP Computer Science Work. 
 
-Ayyyy P Compootr Syense!
+Files are organized like this:
+

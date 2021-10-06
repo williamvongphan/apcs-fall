@@ -10,7 +10,7 @@ class Maxidx {
                 idx = x;
             }
         }
-        return idx - 1 // to account for offset;
+        return idx - 1; // to account for offset;
     }
 
     public static void main(String[] args) {
