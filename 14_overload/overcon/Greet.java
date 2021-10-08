@@ -1,4 +1,4 @@
-public class Greet1 {
+public class Greet {
 
 	// who likes typing that every time :P
 	// aka utility function

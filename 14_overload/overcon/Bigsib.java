@@ -5,6 +5,10 @@ public class Bigsib {
 	public Bigsib (String msg) {
 		message = msg;
 	}
+
+	public Bigsib () {
+		message = "Hello";
+	}
 	
 	public void setHelloMsg(String msg) {
 		message = msg; // set class attribute
