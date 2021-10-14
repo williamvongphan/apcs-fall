@@ -1,3 +1,13 @@
+/*
+DISCO
+	Private variables cannot be accessed outside of their class. You must access them through a method within the class. 
+	If variables were public, you could access them from outside their class( i.e. as acct.accountName).
+	
+	The assignment taught us to apply the concepts we learned in the pre-work and in class recently into a useful? class. 
+QCC
+	How do you truncate decimals so it displays in cents (i.e. $192.57 instead of 192.5728491923 or $928.50 instead of $928.5)?
+*/
+
 class Main {
 	public static void main(String[] args) {
 		// I started a checking account.
