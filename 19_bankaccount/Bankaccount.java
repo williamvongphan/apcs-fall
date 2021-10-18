@@ -10,6 +10,15 @@
  * info at once depositing money withdrawing money
  **/
 
+/**
+ *	Discoveries:
+ *  --> Not much except != meaning not equal to (this was obvious because we learned 			this in intro)
+ *  -->	Typecasting using (short) in front of the number to cast it
+ * 	--> Oveloading the method allows multiple input data structure types. This isn't a 			problem in interpreted languages, but a real pain in the neck in compiled ones. *	--> Do extra homework (with things learned before the class did) in another 				directory (according to the "WillyV Rule" that another student told me was 				supposedly posted in the classroom)
+ *
+ *	Qs, Cs, and more Cs:
+ *	-->	When will we learn ternary operators?
+ **/
 public class Bankaccount {
 
 	// instance variables

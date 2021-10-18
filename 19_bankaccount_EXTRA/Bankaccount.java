@@ -1,11 +1,3 @@
-/*
- *  Extra code for Homework 19
- *	The goal here was to implement ternary operators!
- *  They're really fun to use and I only learned about them last summer
- *	So let's see what happens here!
- *	Implemented for the authorization functions.
- */
-
 /**
  * William Vongphanith and Sophia Eiden APCS pd0 HW18 -- building a more
  * meaningful class 2021-10-18
@@ -16,6 +8,14 @@
  * and methods for... setting each attribute printing out all of an account’s
  * info at once depositing money withdrawing money
  **/
+
+/*
+ *  Extra code for Homework 19
+ *	The goal here was to implement ternary operators!
+ *  They're really fun to use and I only learned about them last summer
+ *	So let's see what happens here!
+ *	Implemented for the authorization functions.
+ */
 
 public class Bankaccount {
 
