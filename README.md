@@ -1,6 +1,5 @@
-# AP Computer Science A
-My AP Computer Science Work. 
-
+# work repo for William Vongphanith
+## APCS 2021-2022
 Files are organized like this:
 ```
 	.
