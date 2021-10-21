@@ -1,3 +1,12 @@
+/*
+TNPG: Awesome Name
+HW 21: STAtisTically Speaking...
+10/20/21
+Notes:
+--> We tried to implement all of the methods with functions that were as elementary as possible. We used functions that were unknown to us only once in the code (Math.pow for our recursive root finder). This sacrifices readability and understandability (is that a word?), but I've tried to explain each utility function in a block comment above the helper. 
+Discoveries:
+--> 
+*/
 
 public class Stats {
 	/*
@@ -50,7 +59,7 @@ public class Stats {
 
 	public static double root(double x, int n) {
 		double left = 0;
-		double right = Math.max(1, x);
+		double right = max(1.0, x); // handles <1 correctly, uses a function we implemented ourselves!
 
 		while (right - left > epsilon) {
 			double mid = (right - left) / 2 + left;
@@ -66,7 +75,9 @@ public class Stats {
 		return (right - left) / 2 + left;
 	}
 
-	/* Start of edited Skeleton */
+	/*
+	 * Start of edited Skeleton
+	 */
 	public static int mean(int a, int b) {
 		return (a + b) / 2;
 	}
@@ -103,9 +114,21 @@ public class Stats {
 		return sqrt(a * b);
 	}
 
+	/*
+	 * public static int geoMean(int a, int b) { return (int) Math.pow(a * b, 1.0 /
+	 * 2.0); //
+	 * https://stackoverflow.com/questions/25743901/find-cube-root-of-a-number-using
+	 * -system-math-pow-method-in-c-sharp }
+	 */
+
 	public static double geoMean(double a, double b) {
 		return root(a * b, 2);
 	}
+
+	/*
+	 * public static double geoMean(double a, double b) { return Math.pow(a * b, 1.0
+	 * / 2.0); }
+	 */
 
 	public static int max(int a, int b, int c) {
 		if (a >= b && a >= c) {
@@ -128,10 +151,22 @@ public class Stats {
 	}
 
 	public static int geoMean(int a, int b, int c) {
-		return (int) root(a * b * c, 3);
+		return round(root(a * b * c, 3));
 	}
+
+	/*
+	public static int geoMean(int a, int b, int c) {
+		return (int) Math.round(Math.pow(a * b * c, 1.0 / 3.0));
+	}
+	*/
 
 	public static double geoMean(double a, double b, double c) {
 		return root(a * b * c, 3);
 	}
+
+	/*
+	public static int geoMean(int a, int b, int c) {
+		return Math.round(Math.pow(a * b * c, 1.0 / 3.0));
+	}
+	*/
 }
