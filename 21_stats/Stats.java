@@ -111,8 +111,14 @@ public class Stats {
 	 */
 
 	public static int geoMean(int a, int b) {
+		return (int) Math.pow(a * b, 1/2.0);
+	}
+
+	/*
+	public static int geoMean(int a, int b) {
 		return sqrt(a * b);
 	}
+	*/
 
 	/*
 	 * public static int geoMean(int a, int b) { return (int) Math.pow(a * b, 1.0 /
@@ -121,14 +127,17 @@ public class Stats {
 	 * -system-math-pow-method-in-c-sharp }
 	 */
 
+	/*
 	public static double geoMean(double a, double b) {
 		return root(a * b, 2);
 	}
+	*/
 
-	/*
-	 * public static double geoMean(double a, double b) { return Math.pow(a * b, 1.0
-	 * / 2.0); }
-	 */
+
+	public static double geoMean(double a, double b) {
+		return Math.pow(a * b, 1.0 / 2.0); 
+	}
+	
 
 	public static int max(int a, int b, int c) {
 		if (a >= b && a >= c) {
@@ -150,23 +159,26 @@ public class Stats {
 		}
 	}
 
+	/*
 	public static int geoMean(int a, int b, int c) {
 		return round(root(a * b * c, 3));
 	}
+	*/
 
-	/*
+	
 	public static int geoMean(int a, int b, int c) {
 		return (int) Math.round(Math.pow(a * b * c, 1.0 / 3.0));
 	}
-	*/
-
+	
+	/*
 	public static double geoMean(double a, double b, double c) {
 		return root(a * b * c, 3);
 	}
-
-	/*
-	public static int geoMean(int a, int b, int c) {
-		return Math.round(Math.pow(a * b * c, 1.0 / 3.0));
-	}
 	*/
+
+	
+	public static double geoMean(double a, double b, double c) {
+		return Math.pow(a * b * c, 1.0 / 3.0);
+	}
+	
 }
