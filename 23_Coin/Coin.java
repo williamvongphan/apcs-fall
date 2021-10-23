@@ -19,7 +19,9 @@ public class Coin {
 	double bias = 0.5;
 
 	public Coin() {
-
+		face = "heads";
+		heads += 1;
+		type = "null";
 	}
 
 	/***
@@ -28,6 +30,8 @@ public class Coin {
 	 ***/
 	public Coin(String s) {
 		type = s;
+		face = "heads";
+		heads += 1;
 	}
 
 	/***
@@ -75,6 +79,7 @@ public class Coin {
 	 * gets appropriate value Returns value assigned.
 	 ***/
 	private double assignValue(String s) {
+		type = s;
 		if (s == "penny") {
 			value = 0.01;
 		}
