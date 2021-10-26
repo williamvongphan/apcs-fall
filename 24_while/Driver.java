@@ -37,7 +37,7 @@ public class Driver {
 			if (yours.equals(mine)) {
 				a += 1;
 			}
-			b += 1
+			b += 1;
 		}
 		System.out.println("Coins were flipped " + b + " times and matched " + a + " times.");
 
