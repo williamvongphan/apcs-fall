@@ -39,7 +39,22 @@ public class Driver {
 			}
 			b += 1;
 		}
-		System.out.println("Coins were flipped " + b + " times and matched " + a + " times.");
+		System.out.println("Two coins were flipped " + b + " times and matched " + a + " times.");
+
+		// goal 3
+		yours.reset("No face", 0.5);
+		mine.reset("No face", 0.5);
+		int c = 0;
+		int d = 0;
+		while (c % YoB != 0 || c < 65536) {
+			yours.flip();
+			mine.flip();
+			if (yours.equals(mine)) {
+				c += 1;
+			}
+			d += 1;
+		}
+		System.out.println("Two coins were flipped " + d + " times and matched " + c + " times.");
 
 	}// end main()
 
