@@ -46,7 +46,7 @@ public class Driver {
 		mine.reset("No face", 0.5);
 		int c = 0;
 		int d = 0;
-		while (c % YoB != 0 || c < 65536) {
+		while (c % YoB != 0 || c < 65536) /* (!(c % YoB == 0 && c >= 65536)) */{
 			yours.flip();
 			mine.flip();
 			if (yours.equals(mine)) {
