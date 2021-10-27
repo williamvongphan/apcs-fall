@@ -7,15 +7,15 @@ public class Maf {
 	}
 
 	public static long GCD (long a, long b) {
-		return (long) GCD(a, b);
+		return (long) GCD((double) a, (double) b);
 	}
 
 	public static int GCD (int a, int b) {
-		return (int) GCD(a, b);
+		return (int) GCD((double) a, (double) b);
 	}
 
 	public static float GCD (float a, float b) {
-		return (float) GCD(a, b);
+		return (float) GCD((double) a, (double) b);
 	}
 
 	public static void main (String[] args) {
