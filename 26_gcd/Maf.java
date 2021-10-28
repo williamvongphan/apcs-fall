@@ -25,3 +25,4 @@ public class Maf {
 		System.out.println("The GCD of 1874.0 and 192.0 is " + GCD(1874.0, 192.0));
 	}
 }
+
