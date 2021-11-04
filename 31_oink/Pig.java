@@ -96,6 +96,6 @@ public class Pig {
 		System.out.println("The vowels of 'Let me see your pig latin generator!' are '" + allVowels(TEST_STRING_1) + "'");
 		System.out.println("The vowels of 'This sentence has a lot of vowels! aeiou aeiou.' are '" + allVowels(TEST_STRING_2) + "'");
 		System.out.println("The vowels of 'Ths sntnc hs n vwls! Why?' are '" + allVowels(TEST_STRING_3) + "'");
-	} //end main()
+	} 
 
 } //end class Pig
