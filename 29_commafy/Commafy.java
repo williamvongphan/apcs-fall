@@ -5,7 +5,7 @@ import java.io.PrintStream;
 public class Commafy {
 	private static Integer intLength;
 
-    public static String commafyR (String number) {
+    	public static String commafyR (String number) {
 		intLength = number.length();
 		if (intLength < 4) {
 			return number;
