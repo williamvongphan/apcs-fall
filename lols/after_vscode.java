@@ -503,6 +503,6 @@ public class vscode {
     }
 
     private static void extracted100() {
-        out.println(WHAT_I_ACTUALLY_WANT_TO_CODE100);
+        out.println(WHAT_I_ACTUALLY_WANT_TO_CODE);
     }
 }
