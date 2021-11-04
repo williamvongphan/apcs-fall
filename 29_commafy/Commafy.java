@@ -48,6 +48,6 @@ public class Commafy {
 	}
 
 	private static PrintStream extracted() {
-	return out;
+		return out;
 	}
 }
