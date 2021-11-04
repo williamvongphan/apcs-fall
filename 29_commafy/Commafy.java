@@ -28,13 +28,13 @@ public class Commafy {
 		}
 		Integer x;
 		var answer = "";
-        for (x = intLength; x > 3; x-=3) {
+        	for (x = intLength; x > 3; x-=3) {
 			Integer currentLength = number.length();
 			answer = "," + number.substring(currentLength - 3, currentLength) + answer;
-            number = number.substring(0, x - 3);
-        }
+           		number = number.substring(0, x - 3);
+        	}
 		answer = number + answer;
-        return answer;
+        	return answer;
 	}
 
 	public static String commafyF (Integer number) {
@@ -47,7 +47,7 @@ public class Commafy {
 		}
 	}
 
-    private static PrintStream extracted() {
-        return out;
-    }
+	private static PrintStream extracted() {
+	return out;
+	}
 }
