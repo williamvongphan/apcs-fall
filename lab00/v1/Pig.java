@@ -21,7 +21,7 @@
 */
 
 public class Pig {
-	private static final String/ VOWELS = "aeiou";
+	private static final String VOWELS = "aeiou";
 	private static final String YOWELS = "aeiouy";
 	private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	private static final String PUNCS = ".,:;!?";
@@ -134,7 +134,7 @@ public class Pig {
 				int vPos = letts.indexOf(firstVowel(letts));
 				ans = letts.substring(vPos) + letts.substring(0, vPos) + "ay";
 			}
-			ans = ans + punc;/
+			ans = ans + punc;
 		} else {
 			String letts = w;
 			if (beginsWithVowel(letts))
@@ -274,8 +274,10 @@ public class Pig {
 	 * main: test function
 	 * @param args
 	*/
+	/*
 	public static void main(String[] args) {
 		System.out.println(stringToPig("Pigway is funway."));
 		System.out.println(stringToPig("Yeasdkasdjikqjwmnd!!uiasDAQWDcDWEdqqs.....!!"));
 	}
+	*/
 }
