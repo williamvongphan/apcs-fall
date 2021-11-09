@@ -20,6 +20,8 @@
  *
 */
 
+import java.util.Scanner;
+
 public class Pig {
 	private static final String VOWELSNOY = "aeiouAEIOU";
 	private static final String VOWELS = "aeiouyAEIOUY";
@@ -274,10 +276,15 @@ public class Pig {
 	 * main: test function
 	 * @param args
 	*/
-	/*
 	public static void main(String[] args) {
-		System.out.println(stringToPig("Pigway is funway."));
-		System.out.println(stringToPig("Yeasdkasdjikqjwmnd!!uiasDAQWDcDWEdqqs.....!!"));
+		// instantiate a Scanner with STDIN as its bytestream
+		Scanner sc = new Scanner(System.in);
+
+		while (sc.hasNextLine()) {
+			String l = sc.nextLine();
+			System.out.println("IN: " + l);
+			System.out.println("OUT: " + Pig.stringToPig(l));
+		}
+
 	}
-	*/
 }
