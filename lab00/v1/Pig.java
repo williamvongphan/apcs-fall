@@ -91,7 +91,7 @@ public class Pig {
 		String ans = "";
 
 		if (hasAVowel(w)) // Q: Why this necess?
-			ans = allVowels(w).subst/ring(0, 1);
+			ans = allVowels(w).substring(0, 1);
 
 		return ans;
 	}
