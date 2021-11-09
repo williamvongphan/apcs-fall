@@ -33,7 +33,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static boolean hasA(String w, String letter) {
-		return w.toLowerCase().indexOf(letter) != -1;
+		return w.indexOf(letter) != -1;
 	} // end hasA()
 
 	/**
@@ -43,7 +43,7 @@ public class Pig {
 	 **/
 	public static boolean isAVowel(String letter) 
 	{
-		return VOWELS.toLowerCase().indexOf(letter) != -1;
+		return VOWELS.indexOf(letter) != -1;
 	}
 
 	/**
