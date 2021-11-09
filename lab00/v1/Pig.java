@@ -61,7 +61,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static boolean hasAVowel(String w) {
-		return w.indexOf(w) >= 0;
+		return VOWELS.indexOf(w) >= 0;
 	}
 
 	/**
