@@ -1,72 +1,76 @@
 /*
-TNPG: NAW FAM | Roster: Alif Rahman, William Vongphanith, Nakib Abedin APCS
-pd06 lab00 --Etterbay Odingcay Oughthray Ollaborationcay 2021-11-08 Time
-Spent: 1.3 hr
-class Pig a pig latin translator.
-What we have done in v0. 
---> Implement ability to control what you want expressed in the pig latin translator: do you want capitalization taken care of? Do you want punctuation to be taken care of? Do you want y to be a vowel?
---> --> Implemented the ability to take care of capitalization
---> --> Implemented the ability to take care of punctualization
---> --> Left implementation of YControl for next class. 
+ *
+ *	██╗███╗░░██╗███████╗░█████╗░
+ *	██║████╗░██║██╔════╝██╔══██╗
+ *	██║██╔██╗██║█████╗░░██║░░██║
+ *	██║██║╚████║██╔══╝░░██║░░██║
+ *	██║██║░╚███║██║░░░░░╚█████╔╝
+ *	╚═╝╚═╝░░╚══╝╚═╝░░░░░░╚════╝░
+ */
+
+/*
+ *	TNPG: NAW FAM | Roster: Alif Rahman, William Vongphanith, Nakib Abedin APCS
+ *	pd06 lab00 --Etterbay Odingcay Oughthray Ollaborationcay 2021-11-08 Time
+ *	Spent: 1.3 hrs + 0.6hrs for formatting
+ *	class Pig a pig latin translator.
+ *	What we have done in v0. 
+ *	--> Implement ability to control what you want expressed in the pig latin translator: do you want capitalization taken care of? Do you want punctuation to be taken care of? Do you want y to be a vowel?
+ *	--> --> Implemented the ability to take care of capitalization
+ *	--> --> Implemented the ability to take care of punctualization
+ *	--> --> Left implementation of YControl for next class. 
 */
 
 public class Pig {
-
 	private static final String VOWELS = "aeiou";
 	private static final String YOWELS = "aeiouy";
 	private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	private static final String PUNCS = ".,:;!?";
 
+	/*
+	 */
+
 	/**
-	 * boolean hasA(String,String) -- checks for a letter in a String pre: w !=
-	 * null, letter.length() == 1 post: hasA("cat", "a") -> true hasA("cat", "p") ->
-	 * false
+	 * hasA: does the given string contain a letter?
+	 * @param w
+	 * @param letter
+	 * @return
 	 **/
 	public static boolean hasA(String w, String letter) {
-
 		return w.indexOf(letter) != -1;
-
-		/*
-		 * equiv code, wo using indexOf()... boolean ans = false; for( int i = 0; i <
-		 * w.length(); i++ ) { if ( w.substring(i,i+1).equals(letter) ) { ans = true;
-		 * //Q: is there a more efficient way? } } return ans;
-		 */
 	} // end hasA()
 
 	/**
-	 * boolean isAVowel(String) -- tells whether a letter is a vowel precondition:
-	 * letter.length() == 1
+	 * isAVowel: checks if the letter given is a vowel.
+	 * @param letter
+	 * @return
 	 **/
-	public static boolean isAVowel(String letter) {
+	public static boolean isAVowel(String letter) 
+	{
 		return VOWELS.indexOf(letter) != -1;
 	}
 
 	/**
-	 * int countVowels(String) -- counts vowels in a String pre: w != null post:
-	 * countVowels("meatball") -> 3
+	 * countVowels: counts the vowels in a given string.
+	 * @param w
+	 * @return
 	 **/
 	public static int countVowels(String w) {
-
 		return allVowels(w).length();
-
-		/*
-		 * long version using for int numVowels = 0; //init vowels counter var //must
-		 * touch each letter in word, so use FOR for( int i = 0; i < w.length(); i++ ) {
-		 * if ( isAVowel( w.substring(i,i+1) ) ) numVowels++; } return numVowels;
-		 */
 	}
 
 	/**
-	 * boolean hasAVowel(String) -- tells whether a String has a vowel pre: w !=
-	 * null post: hasAVowel("cat") -> true hasAVowel("zzz") -> false
+	 * hasAVowel: checks if a string has a vowel.
+	 * @param w
+	 * @return
 	 **/
 	public static boolean hasAVowel(String w) {
 		return w.indexOf(w) >= 0;
 	}
 
 	/**
-	 * String allVowels(String) -- returns vowels in a String pre: w != null post:
-	 * allVowels("meatball") -> "eaa"
+	 * allVowels: returns string of all vowels in input.
+	 * @param w
+	 * @return
 	 **/
 	public static String allVowels(String w) {
 
@@ -81,9 +85,9 @@ public class Pig {
 	}
 
 	/**
-	 * String firstVowel(String) -- returns first vowel in a String pre: w != null
-	 * post: firstVowel("") --> "" firstVowel("zzz") --> "" firstVowel("meatball")
-	 * --> "e"
+	 * firstVowel: returns the first vowel in a string.
+	 * @param w
+	 * @return
 	 **/
 	public static String firstVowel(String w) {
 
@@ -96,23 +100,31 @@ public class Pig {
 	}
 
 	/**
-	 * boolean beginsWithVowel(String) -- tells whether a String begins with a vowel
-	 * pre: w != null and w.length() > 0 post: beginsWithVowel("apple") --> true
-	 * beginsWithVowel("strong") --> false
+	 * beginsWithVowel: does the word begin with a vowel?
+	 * @param w
+	 * @return
 	 **/
 	public static boolean beginsWithVowel(String w) {
 		return isAVowel(w.substring(0, 1));
 	}
 
+	/**
+	 * boolToInt: converts false to 0 and true to 1
+	 * @param in
+	 * @return
+	 **/
 	public static Integer boolToInt(boolean in) {
 		// fallback for if true != 1 and false != 0
 		return (in == true) ? 1 : 0;
 	}
 
 	/**
-	 * String wordToPig(String) -- converts an English word to Pig Latin pre:
-	 * w.length() > 0 post: wordToPig("apple") --> "appleway" wordToPig("strong")
-	 * --> "ongstray" wordToPig("java") --> "avajay"
+	 * wordToPig: converts a given WORD to pig latin.
+	 * @param w
+	 * @param handlePunctuation
+	 * @param handleCaps
+	 * @param yAsVowel
+	 * @return
 	 **/
 	public static String wordToPig(String w, boolean handlePunctuation, boolean handleCaps, boolean yAsVowel) {
 		String ans = "";
@@ -141,32 +153,29 @@ public class Pig {
 		return ans;
 	}
 
-	/*
-	 * ===================================== boolean isPunc(String) -- tells whether
-	 * a character is punctuation pre: symbol.length() == 1 post: isPunc(".") ->
-	 * true isPunc("b") -> false =====================================
-	 */
+	/**
+	 * isPunc: checks if given character is punctuation.
+	 * @param symbol
+	 * @return
+	 **/
 	public static boolean isPunc(String symbol) {
 		return PUNCS.indexOf(symbol) != -1;
 	}
 
-	/*
-	 * ===================================== boolean isUpperCase(String) -- tells
-	 * whether a letter is uppercase pre: letter.length() == 1 post:
-	 * isUpperCase("a") -> false isUpperCase("A") -> true
-	 * =====================================
-	 */
-
+	/**
+	 * isUpperCase: checks if the letter is an uppercase one.
+	 * @param letter
+	 * @return
+	 **/
 	public static boolean isUpperCase(String letter) {
 		return letter == letter.toUpperCase();
 	}
 
-	/*
-	 * ===================================== boolean hasPunc(String) -- tells
-	 * whether a String contains punctuation pre: w != null post: hasPunc(“cat.”) ->
-	 * true hasPunc(“cat”) -> false =====================================
-	 */
-
+	/**
+	 * hasPunc: checks if the string has punctuation.
+	 * @param w
+	 * @return
+	 **/
 	public static boolean hasPunc(String w) {
 		String[] letters = w.split("");
 		for (String l : letters) {
@@ -176,6 +185,11 @@ public class Pig {
 		return false;
 	}
 
+	/**
+	 * puncOnly: return a string of only punctuation from input.
+	 * @param w
+	 * @return
+	 **/
 	public static String puncOnly(String w) {
 		String punctuation = "";
 		String[] letters = w.split("");
@@ -186,6 +200,11 @@ public class Pig {
 		return punctuation;
 	}
 
+	/**
+	 * lettersOnly: returns string of letters only from input.
+	 * @param w
+	 * @return
+	 **/
 	public static String lettersOnly(String w) {
 		String res = "";
 		String[] letters = w.split("");
@@ -196,17 +215,23 @@ public class Pig {
 		return res;
 	}
 
-	/*
-	 * ===================================== boolean beginsWithUpper(String) --
-	 * tells whether 1st letter is uppercase pre: w != null and w.length() > 0 post:
-	 * beginsWithUpper("Apple") -> true beginsWithUpper("apple") -> false
-	 * =====================================
-	 */
+	/**
+	 * beginsWithUpper: checks if the string is capitalized properly.
+	 * @param w
+	 * @return
+	 **/
 	public static boolean beginsWithUpper(String w) {
 		return isUpperCase(w.substring(0, 1));
 	}
 
-	// begin overload
+	/**
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * @param s
+	 * @param handlePunctuation
+	 * @param handleCaps
+	 * @param yAsVowel
+	 * @return
+	 **/
 	public static String stringToPig(String s, boolean handlePunctuation, boolean handleCaps, boolean yAsVowel) {
 		// tokenizer
 		String[] tokens = s.split(" ");
@@ -218,21 +243,42 @@ public class Pig {
 		return res;
 	}
 
-	// too bad that java doesn't support default parameter values... makes me cry
+	/**
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * @param s
+	 * @param handlePunctuation
+	 * @param handleCaps
+	 * @return
+	 **/
 	public static String stringToPig(String s, boolean handlePunctuation, boolean handleCaps) {
 		return stringToPig(s, handlePunctuation, handleCaps, true);
 	}
 
+	/**
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * @param s
+	 * @param handlePunctuation
+	 * @return
+	 **/
 	public static String stringToPig(String s, boolean handlePunctuation) {
 		return stringToPig(s, handlePunctuation, true, true);
 	}
 
+	/**
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * @param s
+	 * @return
+	 **/
 	public static String stringToPig(String s) {
 		return stringToPig(s, true, true, true);
 	}
 
+	/*
+	 * main: test function
+	 * @param args
+	*/
 	public static void main(String[] args) {
 		System.out.println(stringToPig("Pigway is funway."));
-	} // end main()
-
-} // end class Pig
+		System.out.println(stringToPig("Yeasdkasdjikqjwmnd!!uiasDAQWDcDWEdqqs.....!!"));
+	}
+}
