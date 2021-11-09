@@ -21,8 +21,8 @@
 */
 
 public class Pig {
-	private static final String VOWELS = "aeiou";
-	private static final String YOWELS = "aeiouy";
+	private static final String VOWELSNOY = "aeiouAEIOU";
+	private static final String VOWELS = "aeiouyAEIOUY";
 	private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	private static final String PUNCS = ".,:;!?";
 
@@ -33,7 +33,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static boolean hasA(String w, String letter) {
-		return w.indexOf(letter) != -1;
+		return w.toLowerCase().indexOf(letter) != -1;
 	} // end hasA()
 
 	/**
@@ -43,7 +43,7 @@ public class Pig {
 	 **/
 	public static boolean isAVowel(String letter) 
 	{
-		return VOWELS.indexOf(letter) != -1;
+		return VOWELS.toLowerCase().indexOf(letter) != -1;
 	}
 
 	/**

@@ -26,12 +26,13 @@ import java.util.Scanner;  //Scanner is not part of java's std lib
 public class Scan {
 
   public static void main( String[] args ) {
-
+	System.out.print("IN: ");
     //instantiate a Scanner with STDIN as its bytestream
     Scanner sc = new Scanner( System.in );
 
-    while( sc.hasNext() ) {
-      System.out.println(Pig.stringToPig(sc.next()));
+    while( sc.hasNextLine() ) {
+      System.out.println("OUT: " + Pig.stringToPig(sc.nextLine()));
+	  System.out.print("IN: ");
     }
 
   }//end main()
