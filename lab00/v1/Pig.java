@@ -160,7 +160,7 @@ public class Pig {
 	}
 
 	/**
-	 * isUpperCase: checks if the letter is an uppercase one.
+	 * isUpperCase: checks if the java -cp xxx.jar YourProgram < "Path/to/the/file"letter is an uppercase one.
 	 * @param letter
 	 * @return
 	 **/
