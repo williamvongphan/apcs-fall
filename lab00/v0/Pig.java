@@ -31,6 +31,7 @@ public class Pig {
 
 	/**
 	 * hasA: does the given string contain a letter?
+	 * 
 	 * @param w
 	 * @param letter
 	 * @return
@@ -41,16 +42,17 @@ public class Pig {
 
 	/**
 	 * isAVowel: checks if the letter given is a vowel.
+	 * 
 	 * @param letter
 	 * @return
 	 **/
-	public static boolean isAVowel(String letter) 
-	{
+	public static boolean isAVowel(String letter) {
 		return VOWELS.indexOf(letter) != -1;
 	}
 
 	/**
 	 * countVowels: counts the vowels in a given string.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -60,15 +62,21 @@ public class Pig {
 
 	/**
 	 * hasAVowel: checks if a string has a vowel.
+	 * 
 	 * @param w
 	 * @return
 	 **/
 	public static boolean hasAVowel(String w) {
-		return w.indexOf(w) >= 0;
+		for (String vowel : VOWELS.split("")) {
+			if (w.split(vowel, -1).length - 1 >= 1)
+				return true;
+		}
+		return false;
 	}
 
 	/**
 	 * allVowels: returns string of all vowels in input.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -86,6 +94,7 @@ public class Pig {
 
 	/**
 	 * firstVowel: returns the first vowel in a string.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -101,6 +110,7 @@ public class Pig {
 
 	/**
 	 * beginsWithVowel: does the word begin with a vowel?
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -110,6 +120,7 @@ public class Pig {
 
 	/**
 	 * boolToInt: converts false to 0 and true to 1
+	 * 
 	 * @param in
 	 * @return
 	 **/
@@ -120,6 +131,7 @@ public class Pig {
 
 	/**
 	 * wordToPig: converts a given WORD to pig latin.
+	 * 
 	 * @param w
 	 * @param handlePunctuation
 	 * @param handleCaps
@@ -155,6 +167,7 @@ public class Pig {
 
 	/**
 	 * isPunc: checks if given character is punctuation.
+	 * 
 	 * @param symbol
 	 * @return
 	 **/
@@ -164,6 +177,7 @@ public class Pig {
 
 	/**
 	 * isUpperCase: checks if the letter is an uppercase one.
+	 * 
 	 * @param letter
 	 * @return
 	 **/
@@ -173,6 +187,7 @@ public class Pig {
 
 	/**
 	 * hasPunc: checks if the string has punctuation.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -187,6 +202,7 @@ public class Pig {
 
 	/**
 	 * puncOnly: return a string of only punctuation from input.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -202,6 +218,7 @@ public class Pig {
 
 	/**
 	 * lettersOnly: returns string of letters only from input.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -217,6 +234,7 @@ public class Pig {
 
 	/**
 	 * beginsWithUpper: checks if the string is capitalized properly.
+	 * 
 	 * @param w
 	 * @return
 	 **/
@@ -225,7 +243,9 @@ public class Pig {
 	}
 
 	/**
-	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and
+	 * passing to wordToPig()
+	 * 
 	 * @param s
 	 * @param handlePunctuation
 	 * @param handleCaps
@@ -244,7 +264,9 @@ public class Pig {
 	}
 
 	/**
-	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and
+	 * passing to wordToPig()
+	 * 
 	 * @param s
 	 * @param handlePunctuation
 	 * @param handleCaps
@@ -255,7 +277,9 @@ public class Pig {
 	}
 
 	/**
-	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and
+	 * passing to wordToPig()
+	 * 
 	 * @param s
 	 * @param handlePunctuation
 	 * @return
@@ -265,7 +289,9 @@ public class Pig {
 	}
 
 	/**
-	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and passing to wordToPig()
+	 * stringToPig: converts a STRING to Pig Latin, splitting into word tokens and
+	 * passing to wordToPig()
+	 * 
 	 * @param s
 	 * @return
 	 **/
@@ -275,8 +301,9 @@ public class Pig {
 
 	/*
 	 * main: test function
+	 * 
 	 * @param args
-	*/
+	 */
 	public static void main(String[] args) {
 		System.out.println(stringToPig("Pigway is funway."));
 		System.out.println(stringToPig("Yeasdkasdjikqjwmnd!!uiasDAQWDcDWEdqqs.....!!"));
