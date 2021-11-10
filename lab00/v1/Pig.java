@@ -16,8 +16,6 @@
  *	What we have done in v1. 
  *	--> implement the scanner into the program! big achievement
  *	--> implement partial support for allowing y or not
- *
- *
 */
 
 import java.util.Scanner;
