@@ -118,7 +118,7 @@ public class Pig {
 		String ans = ""; // init return String
 
 		for (int i = 0; i < w.length(); i++) {
-			if (isAVowel(w.substring(i, i + 1)))
+			if (isAVowel(w.substring(i, i + 1), useY))
 				ans += w.substring(i, i + 1); // grow the return String
 		}
 		return ans;
@@ -136,7 +136,7 @@ public class Pig {
 
 		String ans = "";
 
-		if (hasAVowel(w)) // Q: Why this necess?
+		if (hasAVowel(w, useY)) // Q: Why this necess?
 			ans = allVowels(w, useY).substring(0, 1);
 
 		return ans;
@@ -298,7 +298,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static String stringToPig(String s, boolean handlePunctuation, boolean handleCaps) {
-		return stringToPig(s, handlePunctuation, handleCaps, true);
+		return stringToPig(s, handlePunctuation, handleCaps, false);
 	}
 
 	/**
@@ -331,7 +331,7 @@ public class Pig {
 		while (sc.hasNextLine()) {
 			String l = sc.nextLine();
 			System.out.println("IN: " + l);
-			System.out.println("OUT: " + Pig.stringToPig(l));
+			System.out.println("OUT: " + Pig.stringToPig(l, true, true, true));
 		}
 
 	}
