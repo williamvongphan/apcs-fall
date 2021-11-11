@@ -35,6 +35,7 @@
 	New in v2:
 	1) Added heading to the file and also added each of the mandatory subheadings, filled in with their corresponding content.
 	2) Remove unused vars
+	3) useY works now!
 */
 
 
@@ -308,7 +309,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static String stringToPig(String s, boolean handlePunctuation) {
-		return stringToPig(s, handlePunctuation, true, true);
+		return stringToPig(s, handlePunctuation, true, false);
 	}
 
 	/**
@@ -317,7 +318,7 @@ public class Pig {
 	 * @return
 	 **/
 	public static String stringToPig(String s) {
-		return stringToPig(s, true, true, true);
+		return stringToPig(s, true, true, false);
 	}
 
 	/*
@@ -333,6 +334,5 @@ public class Pig {
 			System.out.println("IN: " + l);
 			System.out.println("OUT: " + Pig.stringToPig(l, true, true, true));
 		}
-
 	}
 }
