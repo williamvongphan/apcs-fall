@@ -34,6 +34,7 @@
 	1) We think that it is because the scanner uses .next() twice
 	New in v2:
 	1) Added heading to the file and also added each of the mandatory subheadings, filled in with their corresponding content.
+	2) Remove unused vars
 */
 
 
@@ -42,7 +43,6 @@ import java.util.Scanner;
 
 public class Pig {
 	private static final String VOWELS = "aeiouAEIOU";
-	private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	private static final String PUNCS = ".,:;!?";
 
 	/**
