@@ -6,7 +6,7 @@ public class Loopier {
 		for (int idx = begin; idx < end; idx++ ) {
 			ans[idx - begin] = array[idx];
 		}
-		
+		return ans;
 	}
 	
 	public static int[] init (int[] array) {
