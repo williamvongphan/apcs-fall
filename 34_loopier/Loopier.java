@@ -2,7 +2,11 @@ import java.util.*;
 
 public class Loopier {
 	public static int[] slice (int[] array, int begin, int end) {
-		for
+		int[] ans = new int[end - begin];
+		for (int idx = begin; idx < end; idx++ ) {
+			ans[idx - begin] = array[idx];
+		}
+		
 	}
 	
 	public static int[] init (int[] array) {
