@@ -26,6 +26,8 @@ Most days, we will create a new file that stores all our work in Java for the da
 
 `README.md`: What you're reading right now
 
+`.breakpoints`: What?
+
 ### Convenience Scripts
 
 `clean.sh`: Cleans all the .class files in all subdirectories.
