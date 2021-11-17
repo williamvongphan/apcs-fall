@@ -43,11 +43,7 @@ public class Slots {
 	  post: mutable array _fruits contains same elements as FRUITS
 	  =====================================*/
 	public Slots() {
-		//allocate memory for _fruits based on size of FRUITS:
-
-
-		//copy elements of FRUITS into _fruits:
-
+		_fruits = Slots.FRUITS;
 	}
 
 
@@ -57,7 +53,7 @@ public class Slots {
 	  post: returns String of elements in slots 0 thru 2, separated by tabs
 	  =====================================*/
 	public String toString() {
-
+		return _fruits[0] + "\t" + _fruits[1] + "\t" + _fruits[2];
 	}
 
 
@@ -78,6 +74,7 @@ public class Slots {
 	  pre:  _fruits array exists
 	  post: randomized order of elements in _fruits array
 	  =====================================*/
+/*
 	public void spinOnce() {
 		// A simple approach to shuffling:
 		// iterate through the array, swapping
@@ -85,7 +82,7 @@ public class Slots {
 		for ()
 			swap();
 	}
-
+*/
 
 	/*=====================================
 	  boolean jackpot() -- checks for a winning combo
@@ -108,25 +105,27 @@ public class Slots {
 	  or if first 3 slots mutually distinct, 
 	  false otherwise
 	  =====================================*/
+/*
 	public boolean miniWin() {
 		boolean retBoo = ?
 
 
 			return retBoo;
 	}
-
+*/
 
 	//main() method for testing
 	public static void main(String[] args) {
 		//usage: move bar below down 1 line at a time to test functionality...
 
-		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 		Slots machine01 = new Slots();
 		Slots machine02 = new Slots();
 		//test to verify slot machines function indepently
 		System.out.println();
 		System.out.println( "Machine01 initial state:\t" + machine01 );
 		System.out.println( "Machine02 initial state:\t" + machine02 );
+		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		System.out.println( "\nSpinning machine01...\n" );
 		machine01.spinOnce();
 		System.out.println();
