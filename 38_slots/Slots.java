@@ -68,21 +68,29 @@ public class Slots {
 		temp[j] = _fruits[i];
 	}
 
+	public static int randIntExclusive (int arrayLength, int idx){
+		int randInt = (int) (Math.random()*(arrayLength-1));
+		if (randInt>=idx){
+			randInt++;
+		}
+		return randInt;
+	}
 
 	/*=====================================
 	  void spinOnce() -- simulate a pull of the slot machine lever
 	  pre:  _fruits array exists
 	  post: randomized order of elements in _fruits array
 	  =====================================*/
-/*
+
 	public void spinOnce() {
 		// A simple approach to shuffling:
 		// iterate through the array, swapping
 		// the val at each index with a randomly chosen other index
-		for ()
-			swap();
+		for (int a = 0; a < _fruits.length; a++) {
+			swap(a,randIntExclusive(_fruits.length,a));
+		}
 	}
-*/
+
 
 	/*=====================================
 	  boolean jackpot() -- checks for a winning combo
@@ -125,17 +133,19 @@ public class Slots {
 		System.out.println();
 		System.out.println( "Machine01 initial state:\t" + machine01 );
 		System.out.println( "Machine02 initial state:\t" + machine02 );
-		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
 		System.out.println( "\nSpinning machine01...\n" );
 		machine01.spinOnce();
 		System.out.println();
 		System.out.println( "Machine01 state:\t" + machine01 );
 		System.out.println( "Machine02 state:\t" + machine02 );
 		System.out.println();
+		
 		//test gamble-until-you-win mechanism
 		System.out.println( "Preparing to spin until a mini win! . . ." );
 		System.out.println( "------------------------------------" );
 		//if you haven't won, spin again until you win!
+		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		while( machine01.miniWin() == false ) {
 		  System.out.println( "Your spin..." + "\t" + machine01 );
 		  System.out.println( "LOSE\n" );
