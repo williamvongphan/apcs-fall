@@ -43,7 +43,9 @@ public class Slots {
 	  post: mutable array _fruits contains same elements as FRUITS
 	  =====================================*/
 	public Slots() {
+
 		_fruits = Slots.FRUITS;
+		
 	}
 
 
