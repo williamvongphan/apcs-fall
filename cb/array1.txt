@@ -1,0 +1,136 @@
+1
+
+public boolean firstLast6(int[] nums) {
+  return (nums[0] == 6 || nums[nums.length - 1] == 6);
+}
+
+2
+
+public boolean sameFirstLast(int[] nums) {
+  return (nums.length >= 1 && nums[nums.length - 1] == nums[0]);
+}
+
+3
+
+public int[] makePi() {
+  int[] a = {3, 1, 4};
+  return a;
+}
+
+4
+
+public boolean commonEnd(int[] a, int[] b) {
+  return (a[0] == b[0] || a[a.length - 1] == b[b.length - 1]);
+}
+
+5
+
+public int[] rotateLeft3(int[] nums) {
+  int[] newNums = {nums[1],nums[2],nums[0]};
+  return newNums;
+}
+
+6 
+
+public int[] reverse3(int[] nums) {
+  int[] newNums = {nums[2],nums[1],nums[0]};
+  return newNums;
+}
+
+7
+
+public int[] maxEnd3(int[] nums) {
+  int maxElem = 0;
+  if (nums[0]>nums[nums.length-1]){
+    maxElem = nums[0];
+  } else {
+    maxElem = nums[nums.length-1];
+  }
+  int[] result = {maxElem,maxElem, maxElem};
+  return result;
+}
+
+8
+
+public int sum2(int[] nums) {
+  if (nums.length==0){
+    return 0;
+  } 
+  if (nums.length==1){
+    return nums[0];
+  } else {
+    return nums[0]+nums[1];
+  }
+}
+
+9
+
+
+public int[] middleWay(int[] a, int[] b) {
+  int[] result = {a[1],b[1]};
+  return result;
+}
+
+10
+
+public int[] makeEnds(int[] nums) {
+  int[] res = {nums[0],nums[nums.length-1]};
+  return res;
+}
+
+11
+
+public boolean has23(int[] nums) {
+  for (int element:nums){
+    if (element==2||element==3){
+      return true;
+    }
+  }
+  return false;
+}
+
+12
+
+public boolean no23(int[] nums) {
+  for (int element:nums){
+    if (element==2||element==3){
+      return false;
+    }
+  }
+  return true;
+}
+
+13
+
+public int[] makeLast(int[] nums) {
+  int[] res = new int[2*nums.length];
+  res[res.length-1] = nums[nums.length-1];
+  return res;
+}
+
+
+14
+
+public boolean double23(int[] nums) {
+  if (nums.length<2){
+    return false;
+  } else {
+    return ((nums[0]==2)&&(nums[1]==2)||(nums[0]==3)&&(nums[1]==3));
+  }
+}
+
+
+15
+
+public int[] fix23(int[] nums) {
+  if (nums[0]==2&&nums[1]==3){
+    int[] res = {nums[0],0,nums[2]};
+    return res;
+  }
+  if (nums[1]==2&&nums[2]==3){
+    int[] res = {nums[0],nums[1],0};
+    return res;
+  }
+  return nums;
+}
+
