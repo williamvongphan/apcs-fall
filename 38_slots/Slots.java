@@ -1,11 +1,12 @@
 /*****************************************************
- * Clyde "Thluffy" Sinclair
- * APCS pd00
+ * William Vongphanith, Jefford Shau, Jacob Kirmayer
+ * APCS pd06
  * HW38 -- Shmoney
- * 2021-11-18
+ * 2021-11-17
  *
  * class Slots
- * skeleton
+ * Discoveries: Not much
+ * QCC: Not much
  *****************************************************/
 
 public class Slots {
@@ -43,9 +44,7 @@ public class Slots {
 	  post: mutable array _fruits contains same elements as FRUITS
 	  =====================================*/
 	public Slots() {
-
-		_fruits = Slots.FRUITS;
-		
+		this._fruits = FRUITS;
 	}
 
 
@@ -68,6 +67,7 @@ public class Slots {
 		String[] temp = _fruits;
 		temp[i] = _fruits[j];
 		temp[j] = _fruits[i];
+		_fruits = temp;
 	}
 
 	public static int randIntExclusive (int arrayLength, int idx){
@@ -75,7 +75,16 @@ public class Slots {
 		if (randInt>=idx){
 			randInt++;
 		}
+		System.out.println(randInt);
 		return randInt;
+	}
+
+	public static boolean isAllSame (String[] array) {
+		return (array[0] == array[1] && array[1] == array[2] && array[0] == array[2]);
+	}
+
+	public static boolean isAllDifferent (String[] array) {
+		return (array[0] != array[1] && array[1] != array[2] && array[0] != array[2]);
 	}
 
 	/*=====================================
@@ -89,7 +98,7 @@ public class Slots {
 		// iterate through the array, swapping
 		// the val at each index with a randomly chosen other index
 		for (int a = 0; a < _fruits.length; a++) {
-			swap(a,randIntExclusive(_fruits.length,a));
+			this.swap(a,randIntExclusive(_fruits.length,a));
 		}
 	}
 
@@ -101,10 +110,7 @@ public class Slots {
 	  false otherwise
 	  =====================================*/
 	public boolean jackpot() {
-		boolean retBoo = false;
-
-
-		return retBoo;
+		return isAllSame(_fruits);
 	}
 
 
@@ -115,14 +121,11 @@ public class Slots {
 	  or if first 3 slots mutually distinct, 
 	  false otherwise
 	  =====================================*/
-/*
+
 	public boolean miniWin() {
-		boolean retBoo = ?
-
-
-			return retBoo;
+		return isAllSame(_fruits) || isAllDifferent(_fruits);
 	}
-*/
+
 
 	//main() method for testing
 	public static void main(String[] args) {
@@ -147,7 +150,7 @@ public class Slots {
 		System.out.println( "Preparing to spin until a mini win! . . ." );
 		System.out.println( "------------------------------------" );
 		//if you haven't won, spin again until you win!
-		/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
 		while( machine01.miniWin() == false ) {
 		  System.out.println( "Your spin..." + "\t" + machine01 );
 		  System.out.println( "LOSE\n" );
@@ -167,7 +170,6 @@ public class Slots {
 		System.out.println( "====================================" );
 		System.out.println( "Your spin..." + "\t" + machine01 );
 		System.out.println( "JACKPOT!\n" );
-		  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	} //end main
 
 } //end class Slots
