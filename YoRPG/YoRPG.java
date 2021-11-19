@@ -105,7 +105,7 @@ public class YoRPG {
         else {
             System.out.println( "\nLo, yonder monster approacheth!" );
 
-            smaug = new Monster();
+            smaug = new Monster(7, 15);
 
             while( smaug.isAlive() && pat.isAlive() ) {
 
