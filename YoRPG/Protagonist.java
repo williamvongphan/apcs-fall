@@ -3,10 +3,23 @@ public class Protagonist {
     public int health;
     public boolean special;
 
+    public int lowDmg;
+    public int highDmg;
+
     public Protagonist (String n) {
         name = n;
         health = 100;
         special = false;
+        lowDmg = 14;
+        highDmg = 26;
+    }
+
+    public Protagonist (String n, int low, int high) {
+        name = n;
+        health = 100;
+        special = false;
+        lowDmg = low;
+        highDmg = high;
     }
 
     // Check if the health is greater than 0.
@@ -40,11 +53,15 @@ public class Protagonist {
 
     // Attack a monster.
     public int attack(Monster m) {
-        int dmg = getRandom(14, 26) * (1 + convertBoolean(special));
+        int dmg = getRandom(lowDmg, highDmg) * (1 + convertBoolean(special));
         m.takeDamage(dmg);
         return dmg;
     }
 
+    // Return the health of the protagonist.
+    public int getHealth() {
+        return health;
+    }
 
     // Set the special status of the Protagonist to true.
     public void specialize () {

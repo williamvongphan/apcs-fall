@@ -29,6 +29,11 @@ public class Monster {
         health -= damage;
     }
 
+    // Return the health of the monster.
+    public int getHealth() {
+        return health;
+    }
+
     // Return a random integer between one number and another.
     public int getRandom(int low, int high) {
         return (int) (Math.random() * (high - low + 1) + low);
