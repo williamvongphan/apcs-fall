@@ -14,6 +14,20 @@ public class Protagonist {
         return health > 0;
     }
 
+    // Convert boolean value to int.
+    public int convertBoolean(boolean b) {
+        if (b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    // Take damage from the enemy.
+    public void lowerHP(int damage) {
+        health -= damage * (1 + convertBoolean(special));
+    }
+
     // Set the health of the Protagonist.
     public void setHealth(int h) {
         health = h;
@@ -26,7 +40,7 @@ public class Protagonist {
 
     // Attack a monster.
     public void attack(Monster m) {
-        m.health -= getRandom(14, 26);
+        m.health -= m.take
     }
 
 
