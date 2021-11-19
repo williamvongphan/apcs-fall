@@ -51,6 +51,6 @@ public class Monster {
     public int attack(Protagonist p) {
         int dmg = getRandom(lowDmg, highDmg);
         p.takeDamage(dmg);
-        return (dmg * convertBoolean(p.getSpecial()));
+        return (dmg * (convertBoolean(p.getSpecial()) + 1));
     }
 }
