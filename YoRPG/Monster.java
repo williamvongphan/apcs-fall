@@ -29,6 +29,15 @@ public class Monster {
         health -= damage;
     }
 
+    // Convert boolean value to int.
+    public int convertBoolean(boolean b) {
+        if (b) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
     // Return the health of the monster.
     public int getHealth() {
         return health;
@@ -42,6 +51,6 @@ public class Monster {
     public int attack(Protagonist p) {
         int dmg = getRandom(lowDmg, highDmg);
         p.takeDamage(dmg);
-        return dmg;
+        return (dmg * convertBoolean(p.getSpecial()));
     }
 }

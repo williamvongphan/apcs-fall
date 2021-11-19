@@ -37,7 +37,7 @@ public class Protagonist {
     }
 
     // Take damage from the enemy.
-    public void lowerHP(int damage) {
+    public void takeDamage(int damage) {
         health -= damage * (1 + convertBoolean(special));
     }
 
@@ -66,6 +66,11 @@ public class Protagonist {
     // Set the special status of the Protagonist to true.
     public void specialize () {
         special = true;
+    }
+
+    // Return the special status of the Protagonist.
+    public boolean getSpecial() {
+        return special;
     }
 
     // Set the special status of the Protagonist to false.
