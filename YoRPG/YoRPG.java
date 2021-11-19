@@ -165,7 +165,6 @@ public class YoRPG {
 
     //loading...
     YoRPG game = new YoRPG();
-    /*================================================
 
     int encounters = 0;
 
@@ -177,7 +176,6 @@ public class YoRPG {
     }
 
     System.out.println( "Thy game doth be over." );
-	  ================================================*/
     }//end main
 
 }//end class YoRPG

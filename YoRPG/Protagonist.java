@@ -39,8 +39,10 @@ public class Protagonist {
     }
 
     // Attack a monster.
-    public void attack(Monster m) {
-        m.health -= m.take
+    public int attack(Monster m) {
+        int dmg = getRandom(14, 26) * (1 + convertBoolean(special));
+        m.takeDamage(dmg);
+        return dmg;
     }
 
 
@@ -52,5 +54,10 @@ public class Protagonist {
     // Set the special status of the Protagonist to false.
     public void normalize () {
         special = false;
+    }
+
+    // Return the name of the protagonist
+    public String getName() {
+        return name;
     }
 }

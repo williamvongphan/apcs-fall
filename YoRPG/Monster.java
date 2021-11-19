@@ -1,10 +1,18 @@
 public class Monster {
-    public String name;
     public int health;
-    public boolean special;
+    public int lowDmg;
+    public int highDmg;
 
     public Monster() {
+        health = 100;
+        lowDmg = 14;
+        highDmg = 26;
+    }
 
+    public Monster(int low, int high) {
+        health = 100;
+        lowDmg = low;
+        highDmg = high;
     }
 
     public boolean isAlive() {
@@ -22,11 +30,13 @@ public class Monster {
     }
 
     // Return a random integer between one number and another.
-    public int getRandomInt(int min, int max) {
-        return (int) (Math.random() * (max - min + 1)) + min;
+    public int getRandom(int low, int high) {
+        return (int) (Math.random() * (high - low + 1) + low);
     }
 
-    public void attack(Protagonist p) {
-        p.health -= getRandomInt(14, 26);
+    public int attack(Protagonist p) {
+        int dmg = getRandom(lowDmg, highDmg);
+        p.takeDamage(dmg);
+        return dmg;
     }
 }
