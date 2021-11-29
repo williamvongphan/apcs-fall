@@ -88,7 +88,7 @@ public class TwoDimArray
     {
         int b = 0;
         for (int x = 0; x < a[r].length; x++) {
-            b += x;
+            b += a[r][x];
         }
         return b;
     }
