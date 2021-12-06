@@ -53,5 +53,11 @@ public class Rational {
         rat.divide(rate);
         System.out.println(rat.toString());
     }
-
+    // take the gcd of two numbers
+    public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        return gcd(b, a % b);
+    }
 }
