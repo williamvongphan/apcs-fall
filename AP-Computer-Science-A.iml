@@ -9,22 +9,22 @@
       <sourceFolder url="file://$MODULE_DIR$/10_bigsib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/12_bigsib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/13_hatch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/18_bankaccount" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/19_bankaccount" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/19_bankaccount_EXTRA" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/20_whitehat" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/21_stats" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/23_Coin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/24_while" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/25_fence" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/26_gcd" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/27_for" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/29_commafy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/31_oink" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/34_loopier" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cb" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab00" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lols" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18_BankAccount" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19_BankAccount" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19_BankAccount_EXTRA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/21_Stats" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/25_repeat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/27_forrevstr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/29_cliforeastr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/34_array" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
