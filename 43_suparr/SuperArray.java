@@ -1,62 +1,91 @@
-public class Superarray {
-    int[] _data;
+// Clyde "Thluffy" Sinclair
+// APCS pd0
+// HW43 -- encapsulation (basic SuperArray functionality)
+// 2021-12-07t
 
-    public Superarray (int[] array) {
-        _data = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            _data[i] = array[i];
+/***************************
+ * class SuperArray
+ * Wrapper class for array. Facilitates resizing,
+ * getting and setting element values.
+ ***************************/
+
+public class SuperArray
+{
+    private int[] _data;  //underlying container
+    private int _size;    //number of elements in this SuperArray
+
+
+    //default constructor – initializes 10-item array
+    public SuperArray()
+    {
+        _data = new int[ 10 ];
+        _size = 10;
+    }
+
+
+    //output SuperArray in [a,b,c] format
+    public String toString()
+    {
+        String retStr = "[";
+        for( int i = 0; i < _size; i++ ) {
+            retStr += _data[ i ];
+            if( i != _size - 1 )
+                retStr += ", ";
         }
+        retStr += "]";
+        return retStr;
     }
 
-    public int length() {
-        return _data.length;
-    }
 
-    public int get(int index) {
-        return _data[index];
-    }
-
-    public void set(int index, int value) {
-        _data[index] = value;
-    }
-
-    public void clear() {
-        for (int i = 0; i < _data.length; i++) {
-            _data[i] = 0;
+    //double capacity of SuperArray
+    private void expand()
+    {
+        int[] temp = new int[ _data.length * 2 ];
+        _size = _data.length * 2;
+        for( int i = 0; i < _data.length; i++ ) {
+            temp[ i ] = _data[ i ];
         }
-    }
-
-    public void remove(int index) {
-        for (int i = index; i < _data.length - 1; i++) {
-            _data[i] = _data[i + 1];
-        }
-        int[] temp = new int[_data.length - 1];
-        for (int i = 0; i < temp.length; i++) {
-            temp[i] = _data[i];
-        }
-    }
-
-    public void add(int value) {
-        int[] temp = new int[_data.length + 1];
-        for (int i = 0; i < _data.length; i++) {
-            temp[i] = _data[i];
-        }
-        temp[temp.length - 1] = value;
         _data = temp;
     }
 
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        Superarray superarray = new Superarray(array);
-        System.out.println(superarray.length());
-        System.out.println(superarray.get(0));
-        superarray.set(0, 100);
-        System.out.println(superarray.get(0));
-        superarray.clear();
-        System.out.println(superarray.get(0));
-        superarray.add(100);
-        System.out.println(superarray.get(0));
-        superarray.remove(0);
-        System.out.println(superarray.get(0));
+
+    //accessor -- return value at specified index
+    public int get( int index )
+    {
+        return _data[index];
     }
-}
+
+
+    //mutator -- set value at index to newVal,
+    //           return old value at index
+    public int set( int index, int newVal )
+    {
+        int temp = _data[index];
+        _data[index] = newVal;
+        return temp;
+    }
+
+
+    //main method for testing
+    public static void main( String[] args )
+    {
+      SuperArray curtis = new SuperArray();
+      System.out.println( "Printing empty SuperArray curtis..." );
+      System.out.println( curtis );
+
+      for( int i = 0; i < curtis._data.length; i++ ) {
+      curtis.set( i, i * 2 );
+      }
+
+      System.out.println("Printing populated SuperArray curtis...");
+      System.out.println(curtis);
+
+      for( int i = 0; i < 3; i++ ) {
+      curtis.expand();
+      System.out.println("Printing expanded SuperArray curtis...");
+      System.out.println(curtis);
+      }
+    }//end main()
+
+
+}//end class
