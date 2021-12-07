@@ -1,5 +1,5 @@
-// Clyde "Thluffy" Sinclair
-// APCS pd0
+// JWJ (Jefford Shau, William Vongphanith, Jacob Kirmayer)
+// APCS pd6
 // HW43 -- encapsulation (basic SuperArray functionality)
 // 2021-12-07t
 
