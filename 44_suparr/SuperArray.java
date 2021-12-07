@@ -62,13 +62,14 @@ public class SuperArray
     {
         int temp = _data[index];
         _data[index] = newVal;
+        _size += 1;
         return temp;
     }
 
     //adds an item after the last item
     public void add( int newVal )
     {
-        int[] temp = new int[ _data.length + 1 ];
+        int[] temp = new int[ _size + 1 ];
         for (int i = 0; i < _size; i++) {
             temp[i] = _data[i];
         }
