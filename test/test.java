@@ -100,4 +100,39 @@ public class test {
             return "You are an old";
         }
     }
+
+    // calculate the answer to life, the universe, and everything
+    public static int answerToLife() {
+        return 42;
+    }
+
+    // ok
+    public static int ok(int x) {
+        return x;
+    }
+
+    // what is the meaning of life
+    public static int meaningOfLife() {
+        return 42;
+    }
+
+    // really github
+    public static int reallyGithub() {
+        return 42;
+    }
+
+    // calculate the answer of 85
+    public static int answerOf85() {
+        return 42;
+    }
+
+    // calculate the value of 85
+    public static int valueOf85() {
+        return 42;
+    }
+
+    // calculate 17 * 5
+    public static int seventeenTimesFive() {
+        return 42;
+    }
 }
