@@ -47,6 +47,57 @@ public class test {
     }
 
 
-    //
+    // calculate income from name and age
+    public static int calculateIncome(String name, int age) {
+        return age * 10;
+    }
 
+    // use a switch statement to return the number of days in a month
+    public static int daysInMonth(int month) {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return 30;
+            case 2:
+                return 28;
+            default:
+                return 0;
+        }
+    }
+
+    // calculate the mass of the sun
+    public static double massOfSun(int years) {
+        return years * 1.989E30;
+    }
+
+    // calculate the speed of light
+    public static double speedOfLight(int years) {
+        return 299792458 * years;
+    }
+
+    // calculate god
+    public static String god(int years) {
+        if (years < 0) {
+            return "";
+        }
+        if (years < 20) {
+            return "You are a child";
+        }
+        if (years < 40) {
+            return "You are an adult";
+        }
+        if (years < 60) {
+            return "You are an old";
+        }
+    }
 }
