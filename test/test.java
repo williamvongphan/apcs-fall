@@ -28,5 +28,25 @@ public class test {
         return new File(fileName);
     }
 
+    // return the sum of all the numbers in an array
+    public static int sum(int[] nums) {
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+        return sum;
+    }
+
+    // return the sum of all the numbers in an array
+    public static int sum(int[] nums, int start, int end) {
+        int sum = 0;
+        for (int i = start; i < end; i++) {
+            sum += nums[i];
+        }
+        return sum;
+    }
+
+
+    //
 
 }
