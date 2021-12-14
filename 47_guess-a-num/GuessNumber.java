@@ -74,9 +74,7 @@ public class GuessNumber
       playRec();
     }
     else {
-      if (guess == _target) {
         System.out.println("Correct! It took you " + _guessCtr + " tries.");
-      }
     }
   }
 
@@ -106,10 +104,8 @@ public class GuessNumber
         _hi = guess - 1;
       }
       else {
-        if (guess == _target) {
           System.out.println("Correct! It took you " + _guessCtr + " tries.");
-          break; 
-        }
+          break;
       }
     }
   }
@@ -119,8 +115,8 @@ public class GuessNumber
   public void play()
   {
     //use one or the other below:
-    //playRec();
-    playIter();
+    playRec();
+    //playIter();
   }
 
 
