@@ -33,7 +33,18 @@ public class BinSearch
 
     int m = (lo + hi) / 2; //init mid pos var
 
+    if (a[m] == target) {
+      tPos = m;
+    }
 
+    if (a[m] < target) {
+      lo = m + 1;
+      binSearchRec(a, target, lo, hi);
+    }
+    else if (a[m] > target) {
+      hi = m - 1;
+      binSearchRec(a, target, lo, hi);
+    }
 
     return tPos;
   }//end binSearchRec
