@@ -9,15 +9,12 @@ time spent: 0.5 hr
 /*
 DISCO:
   0. Implemented an equals method to compare different objects.
-  1. We realized to not compare the rationals using float values because of the inaccurate precision in the datatypes float and double.
-  2. Rational and Integer as arguments result in incompatible types error and not ClassCastException error.
-  3. The "throw new error" must be the last line of the method or else "unreachable statement" error.
-  4. compareTo method does not work for rational with numerator and denominator both negatives.
+  1. Should not compare float values because of the precision in float, while Rational does not have precision.
 QCC:
-  0. How can you implement a compareTo that works for rationals with the numerator and denominator with both negatives?
+  0.
 */
 
-public class Rational implements Comparable {
+public class Rational {
 
     private int _p; // numerator
     private int _q; // denominator
@@ -104,11 +101,15 @@ public class Rational implements Comparable {
     }
 
     public int compareTo(Object obj) {
-      if (obj instanceof Rational) {
         Rational rational = (Rational) obj;
-        return this._p * rational._q - this._q * rational._p;
-      }
-      throw new ClassCastException("\ncompareTo() input not a Rational");
+        System.out.println(this._p);
+        System.out.println(this._q);
+        System.out.println(rational._p);
+        System.out.println(rational._q);
+        int productVal = (this._p * rational._q) - (this._q * rational._p);
+        System.out.println(productVal);
+        return productVal*this._q*rational._q;
     }
+
 
 }
