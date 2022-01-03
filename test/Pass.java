@@ -27,4 +27,6 @@ public class Pass {
         System.out.println(c.toString());
 
     }
+
+    // hack the compiler and make it do weird stuff
 }
