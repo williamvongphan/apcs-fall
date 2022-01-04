@@ -28,5 +28,12 @@ public class Pass {
 
     }
 
+    // crash the program
+    public static void crash(){
+        int[] x = {1,2,3};
+        x[3] = 4;
+    }
+
+
     // hack the compiler and make it do weird stuff
 }
