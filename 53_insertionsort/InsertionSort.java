@@ -1,16 +1,19 @@
-// Clyde "Thluffy" Sinclair
-// APCS pd0
+// William Vongphanith
+// APCS pd6
 // HW53 -- implementing insertion sort
 // 2022-01-06r
-// time spent:  hrs
+// time spent: 0.3 hrs
 
 /******************************
  * class InsertionSort -- implements InsertionSort algorithm
  *
  * ALGO:
- *
+ * 1. check if the array's first two elements are in order, if not, swap them
+ * 2. for the third element in the array, check if it's in order with the second. if not, swap it with the second, then check with first. (walk the value to it's position)
+ * 3. repeat with bigger and bigger array length until the array is sorted
  * DISCO
- *
+ * 1. The algorithm is pretty simple.
+ * 2. The algorithm is O(n^2)
  * QCC
  * q0: How many passes to sort n elements?
  * a0: To sort n elements, we need to make n-1 passes.
