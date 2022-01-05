@@ -13,15 +13,15 @@
  *
  * QCC
  * q0: How many passes to sort n elements?
- * a0: 
+ * a0: To sort n elements, we need to make n-1 passes.
  * q1: What do you know after pass p?
- * a1: 
+ * a1: After pass p, the first p + 1 elements are sorted.
  * q2: How will you know when sorted?
- * a2:
+ * a2: We will know that the array is sorted when we have made length - 1 passes.
  * q3: What constitues a pass?
- * a3:
+ * a3: A pass is a traversal of the first p + 1 elements.
  * q4: What must you track?
- * a4: 
+ * a4: How many passes were made and which elements were swapped.
  ******************************/
 
 
