@@ -60,29 +60,20 @@ public class InsertionSort
 
 
 
-    public static void insertionSortV( ArrayList<Comparable> data )
+    public static ArrayList<Comparable> insertionSort ( ArrayList<Comparable> data )
     {
-        int partition = 0;
-        for( int i = 1; i < data.size(); i++ ) {
-            //partition marks first item in unsorted region
-            partition = i;
-            // System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
-            // System.out.println( data );
-
-            //traverse sorted region from right to left
-            for( int j = i; j > 0; j-- ) {
-
-                // "walk" the current item to where it belongs
-                // by swapping adjacent items
-                if ( data.get( j ).compareTo( data.get( j-1 ) ) < 0 ) {
-
-                    // System.out.println( "swap indices "+(j-1)+" & "+j+"..." ); //diag
-                    data.set( j, data.set( j-1, data.get( j ) ) );
-                }
-                else
-                    break;
+        ArrayList<Comparable> sorted = new ArrayList<Comparable>();
+        for( int i = 0; i < data.size(); i++ )
+        {
+            Comparable temp = data.get(i);
+            int j = i;
+            while( j > 0 && temp.compareTo(sorted.get(j-1)) < 0 )
+            {
+                sorted.set(j, sorted.get(j-1));
+                j--;
             }
         }
+        return sorted;
     }//end insertionSortV
 
 
