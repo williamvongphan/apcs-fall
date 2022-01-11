@@ -1,8 +1,7 @@
 import static java.lang.System.out;
 
-public class vscode {
-    private static final String WHAT_I_ACTUALLY_WANT_TO_CODE100 = "What I actually want to code";
-    private static final String WHAT_I_ACTUALLY_WANT_TO_CODE99 = WHAT_I_ACTUALLY_WANT_TO_CODE100;
+public class after_vscode {
+    private static final String WHAT_I_ACTUALLY_WANT_TO_CODE99 = "Hello world!";
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE98 = WHAT_I_ACTUALLY_WANT_TO_CODE99;
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE97 = WHAT_I_ACTUALLY_WANT_TO_CODE98;
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE96 = WHAT_I_ACTUALLY_WANT_TO_CODE97;
@@ -101,408 +100,408 @@ public class vscode {
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE3 = WHAT_I_ACTUALLY_WANT_TO_CODE4;
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE2 = WHAT_I_ACTUALLY_WANT_TO_CODE3;
     private static final String WHAT_I_ACTUALLY_WANT_TO_CODE = WHAT_I_ACTUALLY_WANT_TO_CODE2;
-    
+
     public static void main (String[] args) {
         extracted();
     }
 
-    private static void extracted() {
+    public static void extracted() {
         extracted2();
     }
 
     public static void extracted2() {
-        extracted2();
-    }
-    
-    public static void extracted3() {
         extracted3();
     }
-    
-    public static void extracted4() {
+
+    public static void extracted3() {
         extracted4();
     }
-    
-    public static void extracted5() {
+
+    public static void extracted4() {
         extracted5();
     }
-    
-    public static void extracted6() {
+
+    public static void extracted5() {
         extracted6();
     }
-    
-    public static void extracted7() {
+
+    public static void extracted6() {
         extracted7();
     }
-    
-    public static void extracted8() {
+
+    public static void extracted7() {
         extracted8();
     }
-    
-    public static void extracted9() {
+
+    public static void extracted8() {
         extracted9();
     }
-    
-    public static void extracted10() {
+
+    public static void extracted9() {
         extracted10();
     }
-    
-    public static void extracted11() {
+
+    public static void extracted10() {
         extracted11();
     }
-    
-    public static void extracted12() {
+
+    public static void extracted11() {
         extracted12();
     }
-    
-    public static void extracted13() {
+
+    public static void extracted12() {
         extracted13();
     }
-    
-    public static void extracted14() {
+
+    public static void extracted13() {
         extracted14();
     }
-    
-    public static void extracted15() {
+
+    public static void extracted14() {
         extracted15();
     }
-    
-    public static void extracted16() {
+
+    public static void extracted15() {
         extracted16();
     }
-    
-    public static void extracted17() {
+
+    public static void extracted16() {
         extracted17();
     }
-    
-    public static void extracted18() {
+
+    public static void extracted17() {
         extracted18();
     }
-    
-    public static void extracted19() {
+
+    public static void extracted18() {
         extracted19();
     }
-    
-    public static void extracted20() {
+
+    public static void extracted19() {
         extracted20();
     }
-    
-    public static void extracted21() {
+
+    public static void extracted20() {
         extracted21();
     }
-    
-    public static void extracted22() {
+
+    public static void extracted21() {
         extracted22();
     }
-    
-    public static void extracted23() {
+
+    public static void extracted22() {
         extracted23();
     }
-    
-    public static void extracted24() {
+
+    public static void extracted23() {
         extracted24();
     }
-    
-    public static void extracted25() {
+
+    public static void extracted24() {
         extracted25();
     }
-    
-    public static void extracted26() {
+
+    public static void extracted25() {
         extracted26();
     }
-    
-    public static void extracted27() {
+
+    public static void extracted26() {
         extracted27();
     }
-    
-    public static void extracted28() {
+
+    public static void extracted27() {
         extracted28();
     }
-    
-    public static void extracted29() {
+
+    public static void extracted28() {
         extracted29();
     }
-    
-    public static void extracted30() {
+
+    public static void extracted29() {
         extracted30();
     }
-    
-    public static void extracted31() {
+
+    public static void extracted30() {
         extracted31();
     }
-    
-    public static void extracted32() {
+
+    public static void extracted31() {
         extracted32();
     }
-    
-    public static void extracted33() {
+
+    public static void extracted32() {
         extracted33();
     }
-    
-    public static void extracted34() {
+
+    public static void extracted33() {
         extracted34();
     }
-    
-    public static void extracted35() {
+
+    public static void extracted34() {
         extracted35();
     }
-    
-    public static void extracted36() {
+
+    public static void extracted35() {
         extracted36();
     }
-    
-    public static void extracted37() {
+
+    public static void extracted36() {
         extracted37();
     }
-    
-    public static void extracted38() {
+
+    public static void extracted37() {
         extracted38();
     }
-    
-    public static void extracted39() {
+
+    public static void extracted38() {
         extracted39();
     }
-    
-    public static void extracted40() {
+
+    public static void extracted39() {
         extracted40();
     }
-    
-    public static void extracted41() {
+
+    public static void extracted40() {
         extracted41();
     }
-    
-    public static void extracted42() {
+
+    public static void extracted41() {
         extracted42();
     }
-    
-    public static void extracted43() {
+
+    public static void extracted42() {
         extracted43();
     }
-    
-    public static void extracted44() {
+
+    public static void extracted43() {
         extracted44();
     }
-    
-    public static void extracted45() {
+
+    public static void extracted44() {
         extracted45();
     }
-    
-    public static void extracted46() {
+
+    public static void extracted45() {
         extracted46();
     }
-    
-    public static void extracted47() {
+
+    public static void extracted46() {
         extracted47();
     }
-    
-    public static void extracted48() {
+
+    public static void extracted47() {
         extracted48();
     }
-    
-    public static void extracted49() {
+
+    public static void extracted48() {
         extracted49();
     }
-    
-    public static void extracted50() {
+
+    public static void extracted49() {
         extracted50();
     }
-    
-    public static void extracted51() {
+
+    public static void extracted50() {
         extracted51();
     }
-    
-    public static void extracted52() {
+
+    public static void extracted51() {
         extracted52();
     }
-    
-    public static void extracted53() {
+
+    public static void extracted52() {
         extracted53();
     }
-    
-    public static void extracted54() {
+
+    public static void extracted53() {
         extracted54();
     }
-    
-    public static void extracted55() {
+
+    public static void extracted54() {
         extracted55();
     }
-    
-    public static void extracted56() {
+
+    public static void extracted55() {
         extracted56();
     }
-    
-    public static void extracted57() {
+
+    public static void extracted56() {
         extracted57();
     }
-    
-    public static void extracted58() {
+
+    public static void extracted57() {
         extracted58();
     }
-    
-    public static void extracted59() {
+
+    public static void extracted58() {
         extracted59();
     }
-    
-    public static void extracted60() {
+
+    public static void extracted59() {
         extracted60();
     }
-    
-    public static void extracted61() {
+
+    public static void extracted60() {
         extracted61();
     }
-    
-    public static void extracted62() {
+
+    public static void extracted61() {
         extracted62();
     }
-    
-    public static void extracted63() {
+
+    public static void extracted62() {
         extracted63();
     }
-    
-    public static void extracted64() {
+
+    public static void extracted63() {
         extracted64();
     }
-    
-    public static void extracted65() {
+
+    public static void extracted64() {
         extracted65();
     }
-    
-    public static void extracted66() {
+
+    public static void extracted65() {
         extracted66();
     }
-    
-    public static void extracted67() {
+
+    public static void extracted66() {
         extracted67();
     }
-    
-    public static void extracted68() {
+
+    public static void extracted67() {
         extracted68();
     }
-    
-    public static void extracted69() {
+
+    public static void extracted68() {
         extracted69();
     }
-    
-    public static void extracted70() {
+
+    public static void extracted69() {
         extracted70();
     }
-    
-    public static void extracted71() {
+
+    public static void extracted70() {
         extracted71();
     }
-    
-    public static void extracted72() {
+
+    public static void extracted71() {
         extracted72();
     }
-    
-    public static void extracted73() {
+
+    public static void extracted72() {
         extracted73();
     }
-    
-    public static void extracted74() {
+
+    public static void extracted73() {
         extracted74();
     }
-    
-    public static void extracted75() {
+
+    public static void extracted74() {
         extracted75();
     }
-    
-    public static void extracted76() {
+
+    public static void extracted75() {
         extracted76();
     }
-    
-    public static void extracted77() {
+
+    public static void extracted76() {
         extracted77();
     }
-    
-    public static void extracted78() {
+
+    public static void extracted77() {
         extracted78();
     }
-    
-    public static void extracted79() {
+
+    public static void extracted78() {
         extracted79();
     }
-    
-    public static void extracted80() {
+
+    public static void extracted79() {
         extracted80();
     }
-    
-    public static void extracted81() {
+
+    public static void extracted80() {
         extracted81();
     }
-    
-    public static void extracted82() {
+
+    public static void extracted81() {
         extracted82();
     }
-    
-    public static void extracted83() {
+
+    public static void extracted82() {
         extracted83();
     }
-    
-    public static void extracted84() {
+
+    public static void extracted83() {
         extracted84();
     }
-    
-    public static void extracted85() {
+
+    public static void extracted84() {
         extracted85();
     }
-    
-    public static void extracted86() {
+
+    public static void extracted85() {
         extracted86();
     }
-    
-    public static void extracted87() {
+
+    public static void extracted86() {
         extracted87();
     }
-    
-    public static void extracted88() {
+
+    public static void extracted87() {
         extracted88();
     }
-    
-    public static void extracted89() {
+
+    public static void extracted88() {
         extracted89();
     }
-    
-    public static void extracted90() {
+
+    public static void extracted89() {
         extracted90();
     }
-    
-    public static void extracted91() {
+
+    public static void extracted90() {
         extracted91();
     }
-    
-    public static void extracted92() {
+
+    public static void extracted91() {
         extracted92();
     }
-    
-    public static void extracted93() {
+
+    public static void extracted92() {
         extracted93();
     }
-    
-    public static void extracted94() {
+
+    public static void extracted93() {
         extracted94();
     }
-    
-    public static void extracted95() {
+
+    public static void extracted94() {
         extracted95();
     }
-    
-    public static void extracted96() {
+
+    public static void extracted95() {
         extracted96();
     }
-    
-    public static void extracted97() {
+
+    public static void extracted96() {
         extracted97();
     }
-    
-    public static void extracted98() {
+
+    public static void extracted97() {
         extracted98();
     }
-    
+
+    public static void extracted98() {
+        extracted99();
+    }
+
     public static void extracted99() {
         extracted100();
     }
 
-    private static void extracted100() {
-        out.println(WHAT_I_ACTUALLY_WANT_TO_CODE);
+    public static void extracted100() {
+        System.out.println(WHAT_I_ACTUALLY_WANT_TO_CODE);
     }
 }
