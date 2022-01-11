@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 /*/
  * OrderedArrayList.java
- * By: William Vongphanith, Jefford Shau, and Jacob Kirmayer
+ * By: William Vongphanith, Jefford Shau, and Jacob Kirmayer (code)
  * 01/11/22
+ *
+ * Copyright (c) 2022. All rights reserved.
  */
 
 public class OrderedArrayList {
